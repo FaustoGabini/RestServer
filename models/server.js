@@ -4,7 +4,7 @@ const cors = require("cors");
 class Server {
   constructor() {
     this.app = express(); // Creo la app de express en la misma clase del server
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 3000;
     this.usuariosPath = "/api/usuarios";
 
     // Middlewares
